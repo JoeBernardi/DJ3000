@@ -1,0 +1,9 @@
+module.exports = {
+  twitterConsumerSecret: '',
+  twitterConsumerKey: '',
+  twitterAccessToken: '',
+  twitterAccessTokenSecret: '',
+  forecastKey: '',
+  youTubeKey: '',
+  newsKey: ''
+}
