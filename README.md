@@ -9,4 +9,4 @@
 3. `npm install`
 4. `node dj3000robot.js`
 
-[Apologies to John Swartzwelder](https://vimeo.com/18516240)
+[(Apologies to John Swartzwelder.)](https://vimeo.com/18516240)
