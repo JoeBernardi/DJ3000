@@ -1,0 +1,17 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cities.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "forecast": "^0.3.2",
+    "node-twitterbot": "^0.2.2",
+    "underscore": "^1.8.3",
+    "youtube-search": "^1.0.8"
+  }
+}
