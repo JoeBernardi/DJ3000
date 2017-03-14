@@ -1,9 +1,9 @@
 const https = require("https")
 const fs = require("fs")
 
-const TwitterBot = require("node-twitterbot").TwitterBot
+const twitterBot = require("node-twitterbot").TwitterBot
 const search = require('youtube-search')
-var Forecast = require('forecast');
+const forecast = require('forecast');
 const _ = require('underscore');
 
 const jams = require('./jams')
@@ -16,7 +16,7 @@ Array.prototype.random = function () {
 
 const oneHour = 3600000;
 
-const Bot = new TwitterBot({
+const Bot = new twitterBot({
     "consumer_secret": keys.twitterConsumerSecret,
     "consumer_key": keys.twitterConsumerKey,
     "access_token": keys.twitterAccessToken,
@@ -24,7 +24,7 @@ const Bot = new TwitterBot({
 });
 
 
-const forecast = new Forecast({
+const forecast = new forecast({
   service: 'darksky',
   key: keys.forecastKey,
   units: 'fahrenheit',
