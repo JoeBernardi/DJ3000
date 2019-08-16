@@ -24,7 +24,7 @@ const Bot = new twitterBot({
 });
 
 
-const forecast = new forecast({
+const forecastApp = new forecast({
   service: 'darksky',
   key: keys.forecastKey,
   units: 'fahrenheit',
@@ -75,7 +75,7 @@ function formatNewsTweet(twitter, action, tweet) {
 function formatWeatherTweet() {
   let city = cities.random();
   let coords = [city.lat, city.lng];
-  forecast.get(coords, function(err, weather) {
+  forecastApp.get(coords, function(err, weather) {
     if(err) return console.dir(err);
     let tweet = `Hey, hey. How about that weather out there, ${city.name}? ${Math.round(weather.currently.temperature)}°F, ${weather.minutely.summary}`
     Bot.tweet(tweet)
