@@ -42,7 +42,7 @@ const weatherOpts = {
   degreeType: 'F'
 }
 
-const newsUrl = `https://content.guardianapis.com/search?api-key=${keys.newsKey}&q=congress%20OR%20%22white%20house%22%20OR%20trump&order-by=newest&section=us-news`
+const newsUrl = `https://content.guardianapis.com/search?api-key=${keys.newsKey}&q=GOP%20OR%20%22white%20house%22%20OR%20%22mitch%20mcconnell%22%20OR%20trump&order-by=newest&section=us-news`
 const newsPhrases = [
   "What a bunch of clowns.",
   "Looks like those clowns in Congress did it again.",
